@@ -20,5 +20,17 @@ git config --global -e
 ```
 ### Three stages of Git
   1. Working directory - Untracked and modified files are in the working directory
-  2. Staging area - Where we organise the files for commiting
-  3. Repository - 
+  2. Staging area - Where we organize the files for committing
+  3. Repository - where committed files are stored
+
+### Initializing git
+  1. create a project directory
+  2. `cd` to the project directory
+  3. And type `git init` - a .git folder will be created. (check this with `ls -al`)
+
+### Ignoring files 
+If we want Git to ignore some private files and prevent them from committing:
+  1. Create a .gitignore file with `touch .gitignore` command
+  2. open the .gitignore file in a text editor and add a list of filenames to be ignored
+  3. Add the .gitignore file to the staging area and commit (so that git will know the filenames to be ignored)
+
