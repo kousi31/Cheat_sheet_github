@@ -1,6 +1,6 @@
 # Git commands
 
-Git is distributed version control system
+Git is a distributed version control system
 ### Configure Git
 
 One can configure git at the system (for all users), global (for current user) or local (for current repository) level.
@@ -35,7 +35,25 @@ If we want Git to ignore some private files and prevent them from committing:
   3. Add the .gitignore file to the staging area and commit (so that git will know the filenames to be ignored)
 
 ### Adding files to the staging area
-`git add filename` - to add a single file
-`git add filename1 filename2` - to add multiple files
-`git add -A` - to add all modified files
+`git add filename` - to add a single file  
+`git add filename1 filename2` - to add multiple files  
+`git add -A` - to add all modified files  
+
+### Remove files from the staging area
+`git reset filename` - to remove a single file
+`git reset` - to remove all the files from the staging area
+
+### First commit
+`git commit -m "Initial commit"` use this command to commit. The text within double quotes is the description about the changes in the file
+`git log` will give the details of the commits made
+
+![image](https://github.com/kousi31/Cheat_sheets/assets/48381427/9b8df75d-a51f-4470-b912-5631c82d0fb4)
+
+### Clone a remote repository
+When you want to clone a remote repository (say one given by the company) and start developing on it:  
+  `git clone <URL> <where to clone>`  
+
+### Viewing the remote project
+
+  
 
