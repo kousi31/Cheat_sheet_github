@@ -34,3 +34,8 @@ If we want Git to ignore some private files and prevent them from committing:
   2. open the .gitignore file in a text editor and add a list of filenames to be ignored
   3. Add the .gitignore file to the staging area and commit (so that git will know the filenames to be ignored)
 
+### Adding files to the staging area
+`git add filename` - to add a single file
+`git add filename1 filename2` - to add multiple files
+`git add -A` - to add all modified files
+
