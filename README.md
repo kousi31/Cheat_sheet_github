@@ -67,11 +67,17 @@ When you want to clone a remote repository (say one given by the company) and st
 `git pull origin main` - always pull before pushing changes to the remote repo (to see if others working on the repo made any changes)  
 `git push origin main` - push changes to remote repo. origin is the name of the remote repo, main is the name of the branch  
 
-### Creating a branch
+### Creating a branch and working on it
 `git branch branchname` - to create a branch  
 `git checkout branchname` - to switch working to a desired branch  
 `git branch -a` - lists the name of all branches in a repo. `*` indicates current working branch  
 
 ![image](https://github.com/kousi31/Cheat_sheets/assets/48381427/77246a9e-ca37-40a9-9af2-a05d1c1afd81)
 
+#### make changes in a file and commit to local repo
+`git add -A`  
+`git commit -m "message"`   
 
+#### commit to remote repo
+`git push -u origin branchname` - this is for the first time. 
+This will associate the branch in the local and remote repo. After this one can just use `git pull` or `git push`
