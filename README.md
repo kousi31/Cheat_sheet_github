@@ -81,3 +81,16 @@ When you want to clone a remote repository (say one given by the company) and st
 #### commit to remote repo
 `git push -u origin branchname` - this is for the first time. 
 This will associate the branch in the local and remote repo. After this one can just use `git pull` or `git push`
+
+### Merge a branch
+To finally merge branches to the main branch:
+1. checkout to the main branch in the local repo - `git checkout main`
+2. pull the main branch from the remote repo to check for changes - `git pull origin main`
+3. Merge the desired branch - `git merge --branchname`
+4. check the branches merged so far - `git branch --merged`
+5. push the changes to the main branch in the remote repo - `git push origin main`
+
+### Delete a branch
+1. `git branch -d branchname` - deletes the branch in the local repo
+2. `git push origin --delete branchname` - deletes the branch in the remote repo
+3. Finally check with `git branch -a`
