@@ -54,6 +54,24 @@ When you want to clone a remote repository (say one given by the company) and st
   `git clone <URL> <where to clone>`  
 
 ### Viewing the remote project
+`git remote -v` gives the information about the remote repo
+`git branch -a` gives details of the branches
 
-  
+### Committing changes to the remote repo
+#### Committing locally 
+`git diff` - shows the changes made to the file  
+`git add modified-filename` - add the file to staging area  
+`git commit -m "message"` - commit the change locally  
+
+#### Committing remotely
+`git pull origin main` - always pull before pushing changes to the remote repo (to see if others working on the repo made any changes)  
+`git push origin main` - push changes to remote repo. origin is the name of the remote repo, main is the name of the branch  
+
+### Creating a branch
+`git branch branchname` - to create a branch  
+`git checkout branchname` - to switch working to a desired branch  
+`git branch -a` - lists the name of all branches in a repo. `*` indicates current working branch  
+
+![image](https://github.com/kousi31/Cheat_sheets/assets/48381427/77246a9e-ca37-40a9-9af2-a05d1c1afd81)
+
 
